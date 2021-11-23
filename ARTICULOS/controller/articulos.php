@@ -11,8 +11,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
      header('Access-Control-Allow-Origin: *');
      header('Content-Type: application/json');
 
-     require_once("../config/conexion.php");
-     require_once("../models/Articulos.php");
+     require_once("C:/xampp/htdocs/G5_19/config/conexion.php");
+     require_once("C:/xampp/htdocs/G5_19/ARTICULOS/models/Articulos.php");
      $articulos = new Articulos();
 
      $body = json_decode(file_get_contents("php://input"), true);
