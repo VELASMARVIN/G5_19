@@ -11,8 +11,8 @@
      header('Access-Control-Allow-Origin: *');
      header('Content-Type: application/json');
 
-    require_once("../config/conexion.php");
-    require_once("../models/Socios.php");
+    require_once("C:/xampp/htdocs/G5_19/config/conexion.php");
+    require_once("C:/xampp/htdocs/G5_19/SOCIOS/models/Socios.php");
     $socios = new Socios();
 
     $body = json_decode(file_get_contents("php://input"),true);
