@@ -12,8 +12,8 @@
       header('Content-Type: application/json');
    
 
-     require_once("../config/conexion.php");
-     require_once("../models/Facturas.php");
+     require_once("C:/xampp/htdocs/G5_19/config/conexion.php");
+     require_once("C:/xampp/htdocs/G5_19/FACTURAS/models/Facturas.php");
      $facturas = new Facturas();
 
      $body = json_decode(file_get_contents("php://input"), true);
